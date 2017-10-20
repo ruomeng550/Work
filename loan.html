@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="Content/css/ionic.min.css">
+    <!--<link type="text/css" rel="stylesheet" href="Content/css/font-awesome.min.css">-->
+    <link type="text/css" rel="stylesheet" href="Content/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/loan.css">
+</head>
+<body ng-app="myapp">
+<header class="header">
+    <h1 class="title">
+        <a ui-sref="serve" class="bold">服务</a>
+        <a ui-sref="bank">金融</a>
+    </h1>
+    <span class="search"><i class="fa fa-search"></i></span>
+</header>
+<section class="content">
+    <ui-view></ui-view>
+</section>
+<footer class="footer">
+    <dl>
+        <dt><i class="icon ion-home"></i></dt>
+        <dd><a href="">首页</a></dd>
+    </dl>
+    <dl>
+        <dt><i class="icon ion-closed-captioning"></i></dt>
+        <dd><a href="">论坛</a></dd>
+    </dl>
+    <dl>
+        <dt><i class="icon ion-android-bus"></i></dt>
+        <dd><a href="">选车</a></dd>
+    </dl>
+    <dl class="blue">
+        <dt><i class="icon ion-ios-speedometer-outline"></i></dt>
+        <dd><a href="" class="blue">发现</a></dd>
+    </dl>
+    <dl>
+        <dt><i class="icon ion-person"></i></dt>
+        <dd><a href="">未登录</a></dd>
+    </dl>
+</footer>
+
+<script type="text/javascript" src="Scriprt/jquery.min.js"></script>
+<script type="text/javascript" src="Scriprt/angular.js"></script>
+<script type="text/javascript" src="Scriprt/angular-ui-router.js"></script>
+<script type="text/javascript" src="Scriprt/ionic.bundle.js"></script>
+<script type="text/javascript" src="Scriprt/iscroll.js"></script>
+
+<script type="text/javascript" src="App/app.js"></script>
+
+<script type="text/javascript" src="Scriprt/tab.js"></script>
+
+<script type="text/javascript" src="App/Service/ajaxServer.js"></script>
+<script type="text/javascript" src="App/Service/carServer.js"></script>
+
+
+<script type="text/javascript" src="App/Controller/carController.js"></script>
+
+<script type="text/javascript" src="App/Directive/serveDirective.js"></script>
+<script type="text/javascript" src="App/Directive/bankDirective.js"></script>
+
+<script type="text/javascript" src="Scriprt/swiper.min.js"></script>
+
+</body>
+</html>

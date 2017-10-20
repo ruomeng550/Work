@@ -1,0 +1,20 @@
+/**
+ * Created by DELL on 2017/10/19.
+ */
+app.controller("carController",["$scope","carServer",function($scope,carServer){
+    carServer.getcarou().then(function(res){
+        console.log(res.data);
+        $scope.carmess=res.data;
+    });
+    $scope.more=function(){
+        $scope.count=0;
+        $scope.carmess.forEach(function(val,index){
+            if(!val.state){
+                $scope.count++;
+                if($scope.count<=4){
+                    val.state=true;
+                }
+            }
+        })
+    }
+}]);
